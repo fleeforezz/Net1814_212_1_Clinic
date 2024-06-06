@@ -1,0 +1,53 @@
+﻿<Window
+    x:Class="Clinic.WpfApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Clinic.WpfApp"
+    mc:Ignorable="d"
+    Title="Clinic Booking App"
+    Height="450"
+    Width="800">
+    <StackPanel
+        Orientation="Horizontal"
+        VerticalAlignment="Top"
+        Height="60"
+        Background="#D5E1F6">
+        
+        <Image
+            Source="/Image/icon-1.png"
+            Width="24"
+            Height="24"
+            Margin="15,0,10,0" />
+        <TextBlock
+            Text="Clinic Booking"
+            FontSize="20"
+            FontWeight="SemiBold"
+            VerticalAlignment="Center" />
+        <Menu
+            Name="AppointmentDetail"
+            VerticalAlignment="Center"
+            BorderThickness="0"
+            Margin="12,0,0,0"
+            FontSize="16"
+            Background="#D5E1F6">
+
+            <MenuItem
+                Width="25"
+                FontSize="15">
+                <MenuItem.Icon>
+                    <Image
+                        Source="/Image/down-1.png" />
+                </MenuItem.Icon>
+                <MenuItem
+                    BorderThickness="0"
+                    Header="AppointmentDetail"
+                    FontSize="12"
+                    Click="Open_wAppointmentDetail_Click">
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+    </StackPanel>
+
+</Window>

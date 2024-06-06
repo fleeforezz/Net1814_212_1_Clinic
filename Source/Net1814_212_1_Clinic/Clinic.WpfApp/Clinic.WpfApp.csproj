@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <None Remove="Images\**" />
+    <Page Remove="Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Image\down-1.png" />
+    <None Remove="Image\icon-1.png" />
+    <None Remove="Image\Steam.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Clinic.Business\Clinic.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\down-1.png" />
+    <Resource Include="Image\icon-1.png" />
+    <Resource Include="Image\Steam.png" />
+  </ItemGroup>
+
+</Project>

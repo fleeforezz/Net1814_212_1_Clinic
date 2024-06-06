@@ -1,0 +1,14 @@
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\bin\Debug\net8.0\Clinic.Data.deps.json
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\bin\Debug\net8.0\Clinic.Data.runtimeconfig.json
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\bin\Debug\net8.0\Clinic.Data.dll
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\bin\Debug\net8.0\Clinic.Data.pdb
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\obj\Debug\net8.0\Clinic.Data.csproj.AssemblyReference.cache
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\obj\Debug\net8.0\Clinic.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\obj\Debug\net8.0\Clinic.Data.AssemblyInfoInputs.cache
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\obj\Debug\net8.0\Clinic.Data.AssemblyInfo.cs
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\obj\Debug\net8.0\Clinic.Data.csproj.CoreCompileInputs.cache
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\obj\Debug\net8.0\Clinic.Data.dll
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\obj\Debug\net8.0\refint\Clinic.Data.dll
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\obj\Debug\net8.0\Clinic.Data.pdb
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\obj\Debug\net8.0\Clinic.Data.genruntimeconfig.cache
+D:\Code-Stuff\dotNet\PRN212\Project\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Data\obj\Debug\net8.0\ref\Clinic.Data.dll

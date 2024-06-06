@@ -7,10 +7,10 @@
     xmlns:local="clr-namespace:Clinic.WpfApp"
     mc:Ignorable="d"
     Title="Clinic Booking App"
-    Height="450"
-    Width="800">
+    Height="600"
+    Width="920">
     
-    <Grid>
+    <!--<Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="220"/>
             <ColumnDefinition Width="700" />
@@ -53,7 +53,7 @@
             </Button>
         </StackPanel>
 
-        <!--<StackPanel
+        --><!--<StackPanel
             Grid.Row="1">
             <Button
                 Click="Open_wAppointmentDetail_Click"
@@ -81,8 +81,113 @@
                         Height="20" />
                 </StackPanel>
             </Button>
-        </StackPanel>-->
+        </StackPanel>--><!--
 
-    </Grid>
+    </Grid>-->
+
+    <Border
+        Background="White"
+        CornerRadius="0"
+        BorderThickness="2">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="220" />
+                <ColumnDefinition
+                    Width="700" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="75" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <StackPanel
+                Orientation="Horizontal"
+                HorizontalAlignment="Left"
+                Margin="0,0,0,0">
+
+                <Button
+                    Click="Open_wAppointmentDetail_Click"
+                    BorderThickness="0"
+                    Background="#FFFFFF"
+                    Width="220">
+                    <StackPanel
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top">
+                        <Image
+                            Source="/Image/icon-1.png"
+                            Width="20"
+                            Height="20"
+                            Margin="0,0,12,0" />
+                        <TextBlock
+                            Text="Clinic Booking"
+                            FontSize="14"
+                            FontWeight="SemiBold"
+                            VerticalAlignment="Center"
+                            Margin="0,0,5,0" />
+                        <Image
+                            Source="/Image/down-1.png"
+                            Width="13"
+                            Height="13" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+            <!--<StackPanel
+                Grid.Row="1">
+                <Button
+                    Content="Home"
+                    Height="50"
+                    Foreground="White"
+                    FontSize="14">
+
+                </Button>
+
+                <Button
+                    Content="Services"
+                    Height="50"
+                    Foreground="White"
+                    FontSize="14">
+
+                </Button>
+
+                <Button
+                    Content="Book a Dentist"
+                    Height="50"
+                    Foreground="White"
+                    FontSize="14">
+                </Button>
+
+                <RadioButton
+                    Content="About"
+                    Height="50"
+                    Foreground="White"
+                    FontSize="14">
+
+                </RadioButton>
+            </StackPanel>-->
+
+            <!--<TextBox
+                Text="Search"
+                Width="250"
+                Height="30"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="10"
+                Grid.Column="1">
+            </TextBox>-->
+
+            <ContentControl
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="10"
+                Content="{Binding wAppointmentDetail}" />
+
+        </Grid>
+
+    </Border>
 
 </Window>

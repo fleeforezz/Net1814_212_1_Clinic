@@ -9,45 +9,80 @@
     Title="Clinic Booking App"
     Height="450"
     Width="800">
-    <StackPanel
-        Orientation="Horizontal"
-        VerticalAlignment="Top"
-        Height="60"
-        Background="#D5E1F6">
-        
-        <Image
-            Source="/Image/icon-1.png"
-            Width="24"
-            Height="24"
-            Margin="15,0,10,0" />
-        <TextBlock
-            Text="Clinic Booking"
-            FontSize="20"
-            FontWeight="SemiBold"
-            VerticalAlignment="Center" />
-        <Menu
-            Name="AppointmentDetail"
-            VerticalAlignment="Center"
-            BorderThickness="0"
-            Margin="12,0,0,0"
-            FontSize="16"
-            Background="#D5E1F6">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="700" />
+        </Grid.ColumnDefinitions>
 
-            <MenuItem
-                Width="25"
-                FontSize="15">
-                <MenuItem.Icon>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel
+            Orientation="Horizontal"
+            VerticalAlignment="Top"
+            Height="60">
+
+            <Button
+                Click="Open_wAppointmentDetail_Click"
+                BorderThickness="0"
+                Background="#FFFFFF"
+                Width="220">
+                <StackPanel
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top">
                     <Image
-                        Source="/Image/down-1.png" />
-                </MenuItem.Icon>
-                <MenuItem
-                    BorderThickness="0"
-                    Header="AppointmentDetail"
-                    FontSize="12"
-                    Click="Open_wAppointmentDetail_Click">
-                </MenuItem>
-            </MenuItem>
-        </Menu>
-    </StackPanel>
+                        Source="/Image/icon-1.png"
+                        Width="24"
+                        Height="24"
+                        Margin="0,0,12,0" />
+                    <TextBlock
+                        Text="Clinic Booking"
+                        FontSize="20"
+                        FontWeight="SemiBold"
+                        VerticalAlignment="Center"
+                        Margin="0,0,5,0" />
+                    <Image
+                        Source="/Image/down-1.png"
+                        Width="20"
+                        Height="20" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <!--<StackPanel
+            Grid.Row="1">
+            <Button
+                Click="Open_wAppointmentDetail_Click"
+                BorderThickness="0"
+                Background="#FFFFFF"
+                Width="220">
+                <StackPanel
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top">
+                    <Image
+                        Source="/Image/icon-1.png"
+                        Width="24"
+                        Height="24"
+                        Margin="0,0,12,0" />
+                    <TextBlock
+                        Text="Clinic Booking"
+                        FontSize="20"
+                        FontWeight="SemiBold"
+                        VerticalAlignment="Center"
+                        Margin="0,0,5,0" />
+                    <Image
+                        Source="/Image/down-1.png"
+                        Width="20"
+                        Height="20" />
+                </StackPanel>
+            </Button>
+        </StackPanel>-->
+
+    </Grid>
 
 </Window>

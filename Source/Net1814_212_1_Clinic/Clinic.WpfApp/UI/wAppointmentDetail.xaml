@@ -74,15 +74,18 @@
                     VerticalContentAlignment="Center"
                     Grid.Column="0"
                     Grid.Row="0" />
-                <TextBox
+                <Border
                     Grid.Row="0"
-                    Grid.Column="1"
-                    x:Name="AppointmentDetailId"
-                    Height="25"
-                    Text="{Binding Path=AppointmentDetailId, Mode=TwoWay}"
-                    Margin="5"
-                    Width="60"
-                    HorizontalAlignment="Left" />
+                    Grid.Column="1">
+                    <TextBox
+                        x:Name="AppointmentDetailId"
+                        Height="25"
+                        Text="{Binding Path=AppointmentDetailId, Mode=TwoWay}"
+                        Margin="5"
+                        Width="60"
+                        HorizontalAlignment="Left" />
+                </Border>
+                
 
                 <!--Appointment Id-->
                 <Label
@@ -198,7 +201,9 @@
                 Height="30"
                 Width="80"
                 Command="{Binding SaveCommand}"
-                Click="ButtonSave_Click" />
+                Click="ButtonSave_Click" 
+                BorderThickness="1"
+                BorderBrush="#"/>
             <Button
                 x:Name="ButtonCancel"
                 Content="Cancel"

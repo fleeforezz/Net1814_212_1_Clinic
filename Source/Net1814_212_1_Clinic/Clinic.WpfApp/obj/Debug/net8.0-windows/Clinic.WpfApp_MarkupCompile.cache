@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Pc_Stuff\Github_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.WpfApp\obj\Debug\net8.0-windows\
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.WpfApp\obj\Debug\net8.0-windows\
 Clinic.WpfApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\Pc_Stuff\Github_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.WpfApp\App.xaml
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.WpfApp\App.xaml
 21438906690
 
 5929710146
-241-985005795
+241-453242512
 MainWindow.xaml;UI\wAppointmentDetail.xaml;
 
 False

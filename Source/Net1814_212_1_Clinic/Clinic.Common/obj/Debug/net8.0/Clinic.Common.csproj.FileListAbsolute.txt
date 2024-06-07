@@ -21,3 +21,15 @@ D:\Pc_Stuff\Github_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clin
 D:\Pc_Stuff\Github_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\refint\Clinic.Common.dll
 D:\Pc_Stuff\Github_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\Clinic.Common.pdb
 D:\Pc_Stuff\Github_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\ref\Clinic.Common.dll
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\bin\Debug\net8.0\Clinic.Common.deps.json
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\bin\Debug\net8.0\Clinic.Common.dll
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\bin\Debug\net8.0\Clinic.Common.pdb
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\Clinic.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\Clinic.Common.AssemblyInfoInputs.cache
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\Clinic.Common.AssemblyInfo.cs
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\Clinic.Common.csproj.CoreCompileInputs.cache
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\Clinic.Common.sourcelink.json
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\Clinic.Common.dll
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\refint\Clinic.Common.dll
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\Clinic.Common.pdb
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.Common\obj\Debug\net8.0\ref\Clinic.Common.dll

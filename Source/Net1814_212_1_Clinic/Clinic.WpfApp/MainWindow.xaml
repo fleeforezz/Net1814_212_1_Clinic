@@ -5,90 +5,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:Clinic.WpfApp"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
     mc:Ignorable="d"
     Title="Clinic Booking App"
     Height="600"
     Width="920">
-    
-    <!--<Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="220"/>
-            <ColumnDefinition Width="700" />
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
-        </Grid.RowDefinitions>
-
-        <StackPanel
-            Orientation="Horizontal"
-            VerticalAlignment="Top"
-            Height="60">
-
-            <Button
-                Click="Open_wAppointmentDetail_Click"
-                BorderThickness="0"
-                Background="#FFFFFF"
-                Width="220">
-                <StackPanel
-                    Orientation="Horizontal"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Top">
-                    <Image
-                        Source="/Image/icon-1.png"
-                        Width="24"
-                        Height="24"
-                        Margin="0,0,12,0" />
-                    <TextBlock
-                        Text="Clinic Booking"
-                        FontSize="20"
-                        FontWeight="SemiBold"
-                        VerticalAlignment="Center"
-                        Margin="0,0,5,0" />
-                    <Image
-                        Source="/Image/down-1.png"
-                        Width="20"
-                        Height="20" />
-                </StackPanel>
-            </Button>
-        </StackPanel>
-
-        --><!--<StackPanel
-            Grid.Row="1">
-            <Button
-                Click="Open_wAppointmentDetail_Click"
-                BorderThickness="0"
-                Background="#FFFFFF"
-                Width="220">
-                <StackPanel
-                    Orientation="Horizontal"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Top">
-                    <Image
-                        Source="/Image/icon-1.png"
-                        Width="24"
-                        Height="24"
-                        Margin="0,0,12,0" />
-                    <TextBlock
-                        Text="Clinic Booking"
-                        FontSize="20"
-                        FontWeight="SemiBold"
-                        VerticalAlignment="Center"
-                        Margin="0,0,5,0" />
-                    <Image
-                        Source="/Image/down-1.png"
-                        Width="20"
-                        Height="20" />
-                </StackPanel>
-            </Button>
-        </StackPanel>--><!--
-
-    </Grid>-->
-
     <Border
-        Background="White"
-        CornerRadius="0"
-        BorderThickness="2">
+        Background="White">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition
@@ -103,13 +26,11 @@
                 <RowDefinition />
             </Grid.RowDefinitions>
 
+            <!--Heading-->
             <StackPanel
-                Orientation="Horizontal"
-                HorizontalAlignment="Left"
-                Margin="0,0,0,0">
+                Orientation="Horizontal">
 
                 <Button
-                    Click="Open_wAppointmentDetail_Click"
                     BorderThickness="0"
                     Background="#FFFFFF"
                     Width="220">
@@ -119,66 +40,300 @@
                         VerticalAlignment="Top">
                         <Image
                             Source="/Image/icon-1.png"
-                            Width="20"
-                            Height="20"
+                            Width="30"
+                            Height="30"
                             Margin="0,0,12,0" />
                         <TextBlock
                             Text="Clinic Booking"
-                            FontSize="14"
+                            FontSize="15"
                             FontWeight="SemiBold"
                             VerticalAlignment="Center"
                             Margin="0,0,5,0" />
-                        <Image
-                            Source="/Image/down-1.png"
-                            Width="13"
-                            Height="13" />
                     </StackPanel>
                 </Button>
             </StackPanel>
 
-            <!--<StackPanel
+
+            <!--Something bar-->
+            <StackPanel
                 Grid.Row="1">
-                <Button
-                    Content="Home"
-                    Height="50"
-                    Foreground="White"
-                    FontSize="14">
 
-                </Button>
+                <!--Clinic-->
+                <StackPanel
+                    Orientation="Vertical">
+                    <Button
+                        Height="50"
+                        Width="160"
+                        Foreground="Black"
+                        Background="Transparent"
+                        HorizontalAlignment="Center"
+                        BorderThickness="0"
+                        FontSize="14"
+                        Click="Open_wAppointmentDetail_Click">
+                        <StackPanel
+                            Orientation="Horizontal">
+                            <Image
+                                Source="/Image/hospitals.png"
+                                Width="20"
+                                Height="20" />
+                            <TextBlock
+                                Text="Clinic"
+                                FontSize="14"
+                                FontWeight="Regular"
+                                VerticalAlignment="Center"
+                                Margin="5,0,0,0" />
+                        </StackPanel>
+                        <Button.Resources>
+                            <Style
+                                TargetType="{x:Type Border}">
+                                <Setter
+                                    Property="CornerRadius"
+                                    Value="6" />
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
 
-                <Button
-                    Content="Services"
-                    Height="50"
-                    Foreground="White"
-                    FontSize="14">
+                <!--Service-->
+                <StackPanel
+                    Orientation="Vertical">
+                    <Button
+                        Height="50"
+                        Width="160"
+                        Foreground="Black"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        FontSize="14"
+                        Click="Open_wAppointmentDetail_Click">
+                        <StackPanel
+                            Orientation="Horizontal">
+                            <Image
+                                Source="/Image/room-service.png"
+                                Width="20"
+                                Height="20" />
+                            <TextBlock
+                                Text="Service"
+                                FontSize="14"
+                                FontWeight="Regular"
+                                VerticalAlignment="Center"
+                                Margin="5,0,0,0" />
+                        </StackPanel>
+                        <Button.Resources>
+                            <Style
+                                TargetType="{x:Type Border}">
+                                <Setter
+                                    Property="CornerRadius"
+                                    Value="6" />
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
 
-                </Button>
+                <!--Record-->
+                <StackPanel
+                    Orientation="Vertical">
+                    <Button
+                        Height="50"
+                        Width="160"
+                        Foreground="Black"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        FontSize="14"
+                        Click="Open_wAppointmentDetail_Click">
+                        <StackPanel
+                            Orientation="Horizontal">
+                            <Image
+                                Source="/Image/mobile.png"
+                                Width="20"
+                                Height="20" />
+                            <TextBlock
+                                Text="Record"
+                                FontSize="14"
+                                FontWeight="Regular"
+                                VerticalAlignment="Center"
+                                Margin="5,0,0,0" />
+                        </StackPanel>
+                        <Button.Resources>
+                            <Style
+                                TargetType="{x:Type Border}">
+                                <Setter
+                                    Property="CornerRadius"
+                                    Value="6" />
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
 
-                <Button
-                    Content="Book a Dentist"
-                    Height="50"
-                    Foreground="White"
-                    FontSize="14">
-                </Button>
+                <!--Customer-->
+                <StackPanel
+                    Orientation="Vertical">
+                    <Button
+                        Height="50"
+                        Width="160"
+                        Foreground="Black"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        HorizontalAlignment="Center"
+                        FontSize="14"
+                        Click="Open_wAppointmentDetail_Click">
+                        <StackPanel
+                            Orientation="Horizontal">
+                            <Image
+                                Source="/Image/user-headset.png"
+                                Width="20"
+                                Height="20" />
+                            <TextBlock
+                                Text="Customer"
+                                FontSize="14"
+                                FontWeight="Regular"
+                                VerticalAlignment="Center"
+                                Margin="5,0,0,0" />
+                        </StackPanel>
+                        <Button.Resources>
+                            <Style
+                                TargetType="{x:Type Border}">
+                                <Setter
+                                    Property="CornerRadius"
+                                    Value="6" />
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
 
-                <RadioButton
-                    Content="About"
-                    Height="50"
-                    Foreground="White"
-                    FontSize="14">
+                <!--Appointment-->
+                <StackPanel
+                    Orientation="Vertical">
+                    <Button
+                        Height="50"
+                        Width="160"
+                        Foreground="Black"
+                        Background="Transparent"
+                        HorizontalAlignment="Center"
+                        BorderThickness="0"
+                        FontSize="14"
+                        Click="Open_wAppointmentDetail_Click">
+                        <StackPanel
+                            Orientation="Horizontal">
+                            <Image
+                                Source="/Image/user-md.png"
+                                Width="20"
+                                Height="20" />
+                            <TextBlock
+                                Text="Appointment"
+                                FontSize="14"
+                                FontWeight="Regular"
+                                VerticalAlignment="Center"
+                                Margin="5,0,0,0" />
+                        </StackPanel>
+                        <Button.Resources>
+                            <Style
+                                TargetType="{x:Type Border}">
+                                <Setter
+                                    Property="CornerRadius"
+                                    Value="6" />
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
 
-                </RadioButton>
-            </StackPanel>-->
+                <!--Record Detail-->
+                <StackPanel
+                    Orientation="Vertical">
+                    <Button
+                        Height="50"
+                        Width="160"
+                        Foreground="Black"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        FontSize="14"
+                        Click="Open_wAppointmentDetail_Click">
+                        <StackPanel
+                            Orientation="Horizontal">
+                            <Image
+                                Source="/Image/goal-net.png"
+                                Width="20"
+                                Height="20" />
+                            <TextBlock
+                                Text="Record Detail"
+                                FontSize="14"
+                                FontWeight="Regular"
+                                VerticalAlignment="Center"
+                                Margin="5,0,0,0" />
+                        </StackPanel>
+                        <Button.Resources>
+                            <Style
+                                TargetType="{x:Type Border}">
+                                <Setter
+                                    Property="CornerRadius"
+                                    Value="6" />
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
 
-            <!--<TextBox
-                Text="Search"
-                Width="250"
-                Height="30"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Left"
-                Margin="10"
-                Grid.Column="1">
-            </TextBox>-->
+                <!--Appointment Detail-->
+                <StackPanel
+                    Orientation="Vertical">
+                    <Button
+                        Height="50"
+                        Width="160"
+                        Foreground="Black"
+                        Background="Transparent"
+                        HorizontalAlignment="Center"
+                        BorderThickness="0"
+                        FontSize="14"
+                        Click="Open_wAppointmentDetail_Click">
+                        <StackPanel
+                            Orientation="Horizontal">
+                            <Image
+                                Source="/Image/rectangle-list.png"
+                                Width="20"
+                                Height="20" />
+                            <TextBlock
+                                Text="Appointment Detail"
+                                FontSize="14"
+                                FontWeight="Regular"
+                                VerticalAlignment="Center"
+                                Margin="5,0,0,0" />
+                        </StackPanel>
+                        <Button.Resources>
+                            <Style
+                                TargetType="{x:Type Border}">
+                                <Setter
+                                    Property="CornerRadius"
+                                    Value="6" />
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+
+            </StackPanel>
+
+            <Grid
+                Grid.Column="1"
+                Background="White">
+                <TextBox
+                    Width="250"
+                    Height="30"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Background="Transparent"
+                    BorderThickness="1"
+                    Margin="10">
+                </TextBox>
+                <TextBlock
+                    Text="Search"
+                    FontSize="13"
+                    FontWeight="SemiBold"
+                    Foreground="LightGray"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Margin="19,0,0,0"
+                    Panel.ZIndex="-1"
+                    x:Name="tbPlaceholder7">
+
+                </TextBlock>
+            </Grid>
 
             <ContentControl
                 Grid.Row="1"

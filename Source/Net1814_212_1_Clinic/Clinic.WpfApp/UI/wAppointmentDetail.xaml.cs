@@ -200,5 +200,71 @@ namespace Clinic.WpfApp.UI
                 AppointmentDetailList.ItemsSource = new List<AppointmentDetail>();
             }
         }
+
+        private void txtInput_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(AppointmentDetailId.Text))
+            {
+                tbPlaceholder1.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                tbPlaceholder1.Visibility = Visibility.Hidden;
+            }
+
+            if (string.IsNullOrEmpty(AppointmentId.Text))
+            {
+                tbPlaceholder2.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                tbPlaceholder2.Visibility = Visibility.Hidden;
+            }
+
+            if (string.IsNullOrEmpty(ServiceId.Text))
+            {
+                tbPlaceholder3.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                tbPlaceholder3.Visibility = Visibility.Hidden;
+            }
+
+            if (string.IsNullOrEmpty(isPeriodic.Text))
+            {
+                tbPlaceholder4.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                tbPlaceholder4.Visibility = Visibility.Hidden;
+            }
+
+            if (string.IsNullOrEmpty(Day.Text))
+            {
+                tbPlaceholder5.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                tbPlaceholder5.Visibility = Visibility.Hidden;
+            }
+
+            if (string.IsNullOrEmpty(Month.Text))
+            {
+                tbPlaceholder6.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                tbPlaceholder6.Visibility = Visibility.Hidden;
+            }
+
+            if (string.IsNullOrEmpty(Year.Text))
+            {
+                tbPlaceholder7.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                tbPlaceholder7.Visibility = Visibility.Hidden;
+            }
+        }
     }
 }

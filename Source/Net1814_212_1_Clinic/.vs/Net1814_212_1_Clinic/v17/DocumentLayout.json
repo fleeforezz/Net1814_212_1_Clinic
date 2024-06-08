@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Pc_Stuff\\Github_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\",
+  "WorkspaceRootPath": "C:\\Users\\jso\\Downloads\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|d:\\pc_stuff\\github_landing\\net1814_212_1_clinic\\source\\net1814_212_1_clinic\\clinic.wpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|c:\\users\\jso\\downloads\\net1814_212_1_clinic\\source\\net1814_212_1_clinic\\clinic.wpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|solutionrelative:clinic.wpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|d:\\pc_stuff\\github_landing\\net1814_212_1_clinic\\source\\net1814_212_1_clinic\\clinic.wpfapp\\ui\\wappointmentdetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|solutionrelative:clinic.wpfapp\\ui\\wappointmentdetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|d:\\pc_stuff\\github_landing\\net1814_212_1_clinic\\source\\net1814_212_1_clinic\\clinic.wpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|c:\\users\\jso\\downloads\\net1814_212_1_clinic\\source\\net1814_212_1_clinic\\clinic.wpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|solutionrelative:clinic.wpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|d:\\pc_stuff\\github_landing\\net1814_212_1_clinic\\source\\net1814_212_1_clinic\\clinic.wpfapp\\ui\\wappointmentdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|solutionrelative:clinic.wpfapp\\ui\\wappointmentdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{58894B8A-AD46-40CB-B5C8-B4FE6296CE99}|Clinic.Data\\Clinic.Data.csproj|c:\\users\\jso\\downloads\\net1814_212_1_clinic\\source\\net1814_212_1_clinic\\clinic.data\\models\\net1814_212_1_cliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58894B8A-AD46-40CB-B5C8-B4FE6296CE99}|Clinic.Data\\Clinic.Data.csproj|solutionrelative:clinic.data\\models\\net1814_212_1_cliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58894B8A-AD46-40CB-B5C8-B4FE6296CE99}|Clinic.Data\\Clinic.Data.csproj|d:\\pc_stuff\\github_landing\\net1814_212_1_clinic\\source\\net1814_212_1_clinic\\clinic.data\\models\\net1814_212_1_cliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58894B8A-AD46-40CB-B5C8-B4FE6296CE99}|Clinic.Data\\Clinic.Data.csproj|solutionrelative:clinic.data\\models\\net1814_212_1_cliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|c:\\users\\jso\\downloads\\net1814_212_1_clinic\\source\\net1814_212_1_clinic\\clinic.wpfapp\\ui\\wappointmentdetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|solutionrelative:clinic.wpfapp\\ui\\wappointmentdetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|c:\\users\\jso\\downloads\\net1814_212_1_clinic\\source\\net1814_212_1_clinic\\clinic.wpfapp\\ui\\wappointmentdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{42A53932-EA5E-4CEE-A5B4-96801A82D95D}|Clinic.WpfApp\\Clinic.WpfApp.csproj|solutionrelative:clinic.wpfapp\\ui\\wappointmentdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,13 +34,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "wAppointmentDetail.xaml.cs",
-              "DocumentMoniker": "D:\\Pc_Stuff\\Github_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\UI\\wAppointmentDetail.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jso\\Downloads\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\UI\\wAppointmentDetail.xaml.cs",
               "RelativeDocumentMoniker": "Clinic.WpfApp\\UI\\wAppointmentDetail.xaml.cs",
-              "ToolTip": "D:\\Pc_Stuff\\Github_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\UI\\wAppointmentDetail.xaml.cs",
+              "ToolTip": "C:\\Users\\jso\\Downloads\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\UI\\wAppointmentDetail.xaml.cs",
               "RelativeToolTip": "Clinic.WpfApp\\UI\\wAppointmentDetail.xaml.cs",
-              "ViewState": "AQIAAMQAAAAAAAAAAAAwwM8AAAA/AAAA",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAkwLkAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T01:06:54.717Z",
               "IsPinned": true,
@@ -56,11 +56,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Net1814_212_1_ClinicContext.cs",
-              "DocumentMoniker": "D:\\Pc_Stuff\\Github_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.Data\\Models\\Net1814_212_1_ClinicContext.cs",
+              "DocumentMoniker": "C:\\Users\\jso\\Downloads\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.Data\\Models\\Net1814_212_1_ClinicContext.cs",
               "RelativeDocumentMoniker": "Clinic.Data\\Models\\Net1814_212_1_ClinicContext.cs",
-              "ToolTip": "D:\\Pc_Stuff\\Github_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.Data\\Models\\Net1814_212_1_ClinicContext.cs",
+              "ToolTip": "C:\\Users\\jso\\Downloads\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.Data\\Models\\Net1814_212_1_ClinicContext.cs",
               "RelativeToolTip": "Clinic.Data\\Models\\Net1814_212_1_ClinicContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAACrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -69,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Pc_Stuff\\Github_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jso\\Downloads\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Clinic.WpfApp\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Pc_Stuff\\Github_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\jso\\Downloads\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "Clinic.WpfApp\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAcAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAoAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T03:56:12.857Z",
               "EditorCaption": ""
@@ -84,9 +84,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Pc_Stuff\\Github_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\jso\\Downloads\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Clinic.WpfApp\\MainWindow.xaml",
-              "ToolTip": "D:\\Pc_Stuff\\Github_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\jso\\Downloads\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\MainWindow.xaml",
               "RelativeToolTip": "Clinic.WpfApp\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-06-06T03:34:37.765Z",
@@ -94,11 +94,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "wAppointmentDetail.xaml",
-              "DocumentMoniker": "D:\\Pc_Stuff\\Github_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\UI\\wAppointmentDetail.xaml",
+              "DocumentMoniker": "C:\\Users\\jso\\Downloads\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\UI\\wAppointmentDetail.xaml",
               "RelativeDocumentMoniker": "Clinic.WpfApp\\UI\\wAppointmentDetail.xaml",
-              "ToolTip": "D:\\Pc_Stuff\\Github_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\UI\\wAppointmentDetail.xaml",
+              "ToolTip": "C:\\Users\\jso\\Downloads\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\UI\\wAppointmentDetail.xaml",
               "RelativeToolTip": "Clinic.WpfApp\\UI\\wAppointmentDetail.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-27T13:56:18.907Z",

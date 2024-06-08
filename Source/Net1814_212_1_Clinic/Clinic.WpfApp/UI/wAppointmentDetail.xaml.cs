@@ -102,7 +102,13 @@ namespace Clinic.WpfApp.UI
 
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
-
+            AppointmentDetailId.Text = string.Empty;
+            AppointmentId.Text = string.Empty;
+            ServiceId.Text = string.Empty;
+            isPeriodic.Text = string.Empty;
+            Day.Text = string.Empty;
+            Month.Text = string.Empty;
+            Year.Text = string.Empty;
         }
 
         private void ButtonSelect_Click(object sender, RoutedEventArgs e)

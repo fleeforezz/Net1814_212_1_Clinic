@@ -9,6 +9,23 @@
     Title="wAppointmentDetail"
     Height="650"
     Width="1020">
+    <Window.Resources>
+        <Style
+            TargetType="DataGridColumnHeader">
+            <Setter
+                Property="FontWeight"
+                Value="Bold" />
+            <Setter
+                Property="Foreground"
+                Value="Black" />
+            <Setter
+                Property="Background"
+                Value="Red" />
+            <Setter
+                Property="HorizontalContentAlignment"
+                Value="Center" />
+        </Style>
+    </Window.Resources>
     <StackPanel
         Orientation="Vertical"
         HorizontalAlignment="Center"
@@ -412,6 +429,7 @@
 
             <StackPanel
                 Height="310"
+                Width="Auto"
                 Grid.Column="3">
                 <DataGrid
                     x:Name="AppointmentDetailList"
@@ -419,6 +437,7 @@
                     GridLinesVisibility="None"
                     ItemsSource="{Binding AppointmentDetail}"
                     CanUserAddRows="False"
+                    FrozenColumnCount="3"
                     Height="310"
                     CanUserResizeColumns="False"
                     AlternatingRowBackground="LightGray">
@@ -427,7 +446,7 @@
                         <DataGridTextColumn
                             Header="Detail ID"
                             Binding="{Binding Path=AppointmentDetailId}"
-                            Width="60"
+                            Width="100"
                             Visibility="Visible" />
                         <DataGridTextColumn
                             Header="Appointment ID"
@@ -437,7 +456,7 @@
                         <DataGridTextColumn
                             Header="Service ID"
                             Binding="{Binding Path=ServiceId}"
-                            Width="65"
+                            Width="100"
                             IsReadOnly="True" />
                         <DataGridTextColumn
                             Header="Periodic"

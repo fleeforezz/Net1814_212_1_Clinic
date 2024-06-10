@@ -307,3 +307,4 @@ C:\Users\jso\Downloads\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.W
 C:\Users\jso\Downloads\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.WpfApp\obj\Debug\net8.0-windows\Clinic.WpfApp.pdb
 C:\Users\jso\Downloads\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.WpfApp\obj\Debug\net8.0-windows\Clinic.WpfApp.genruntimeconfig.cache
 C:\Users\jso\Downloads\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.WpfApp\obj\Debug\net8.0-windows\ref\Clinic.WpfApp.dll
+D:\Code-Stuff\GitRepo_Landing\Net1814_212_1_Clinic\Source\Net1814_212_1_Clinic\Clinic.WpfApp\obj\Debug\net8.0-windows\Clinic.WpfApp_Content.g.cs

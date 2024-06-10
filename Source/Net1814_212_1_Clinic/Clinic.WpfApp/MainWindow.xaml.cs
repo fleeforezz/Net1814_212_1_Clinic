@@ -1,9 +1,11 @@
-﻿using Clinic.WpfApp.UI;
+﻿using Clinic.Data.Models;
+using Clinic.WpfApp.UI;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -29,9 +31,16 @@ namespace Clinic.WpfApp
             p.Show();
         }
 
-        private void MenuItem_DpiChanged(object sender, DpiChangedEventArgs e)
+        private void txtInput_TextChanged(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(Search.Text))
+            {
+                tbPlaceholder.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                tbPlaceholder.Visibility = Visibility.Hidden;
+            }
         }
     }
 }

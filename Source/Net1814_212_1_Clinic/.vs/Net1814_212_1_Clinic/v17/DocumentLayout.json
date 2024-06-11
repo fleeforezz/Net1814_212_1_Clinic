@@ -39,8 +39,7 @@
               "ViewState": "AQIAANoAAAAAAAAAAAAuwNYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T01:06:54.717Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "Clinic.WpfApp\\MainWindow.xaml.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAAwCsAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T03:56:12.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T03:56:12.857Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "ToolTip": "D:\\Code-Stuff\\GitRepo_Landing\\Net1814_212_1_Clinic\\Source\\Net1814_212_1_Clinic\\Clinic.WpfApp\\UI\\wAppointmentDetail.xaml",
               "RelativeToolTip": "Clinic.WpfApp\\UI\\wAppointmentDetail.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-27T13:56:18.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T13:56:18.907Z"
             }
           ]
         }

@@ -17,13 +17,25 @@
                 Value="Bold" />
             <Setter
                 Property="Foreground"
-                Value="Black" />
+                Value="#00A3FF" />
+            <Setter 
+                Property="Height"
+                Value="40"/>
             <Setter
                 Property="Background"
-                Value="Red" />
+                Value="#bee6fd" />
             <Setter
                 Property="HorizontalContentAlignment"
                 Value="Center" />
+        </Style>
+        <Style
+            TargetType="DataGridCellsPanel">
+            <Setter
+                Property="Height"
+                Value="40" />
+            <Setter
+                Property="Background"
+                Value="#bee6fd" />
         </Style>
     </Window.Resources>
     <StackPanel
@@ -371,13 +383,14 @@
                     Content="Save"
                     FontSize="13"
                     FontWeight="SemiBold"
-                    Foreground="white"
-                    Background="CornflowerBlue"
+                    Foreground="#00A3FF"
+                    Background="#bee6fd"
                     BorderThickness="0"
                     Padding="65,10,65,10"
                     Margin="0,20,0,5"
                     Grid.Row="13"
                     Grid.Column="0"
+                    Cursor="Hand"
                     Click="ButtonSave_Click">
 
                     <Button.Resources>
@@ -404,6 +417,7 @@
                     Margin="0,5,0,5"
                     Grid.Row="14"
                     Grid.Column="0"
+                    Cursor="Hand"
                     Click="ButtonCancel_Click">
 
                     <Button.Resources>
@@ -440,7 +454,8 @@
                     FrozenColumnCount="3"
                     Height="310"
                     CanUserResizeColumns="False"
-                    AlternatingRowBackground="LightGray">
+                    CanUserResizeRows="False"
+                    AlternatingRowBackground="#f6f7fa">
                     <DataGrid.Columns>
 
                         <DataGridTextColumn

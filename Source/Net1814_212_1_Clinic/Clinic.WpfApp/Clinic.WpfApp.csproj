@@ -17,9 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Image\account.png" />
     <None Remove="Image\choose-alt.png" />
     <None Remove="Image\donate.png" />
     <None Remove="Image\down-1.png" />
+    <None Remove="Image\down-arrow.png" />
     <None Remove="Image\file-circle-info.png" />
     <None Remove="Image\goal-net.png" />
     <None Remove="Image\home.png" />
@@ -45,9 +47,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image\account.png" />
     <Resource Include="Image\choose-alt.png" />
     <Resource Include="Image\donate.png" />
     <Resource Include="Image\down-1.png" />
+    <Resource Include="Image\down-arrow.png" />
     <Resource Include="Image\file-circle-info.png" />
     <Resource Include="Image\goal-net.png" />
     <Resource Include="Image\home.png" />

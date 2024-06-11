@@ -97,11 +97,11 @@
                         <Button
                             Padding="10,15,60,15"
                             Foreground="Black"
-                            Background="Transparent"
+                            Background="White"
                             HorizontalAlignment="Center"
                             BorderThickness="0"
                             FontSize="14"
-                            Click="Open_wAppointmentDetail_Click"
+                            IsEnabled="True"
                             Cursor="Hand">
                             <StackPanel
                                 Orientation="Horizontal">
@@ -139,11 +139,10 @@
                         <Button
                             Padding="10,15,28,15"
                             Foreground="Black"
-                            Background="Transparent"
+                            Background="White"
                             HorizontalAlignment="Left"
                             BorderThickness="0"
                             FontSize="14"
-                            Click="Open_wAppointmentDetail_Click"
                             Cursor="Hand">
                             <StackPanel
                                 Orientation="Horizontal">
@@ -181,11 +180,10 @@
                         <Button
                             Padding="10,15,65,15"
                             Foreground="Black"
-                            Background="Transparent"
+                            Background="White"
                             HorizontalAlignment="Left"
                             BorderThickness="0"
                             FontSize="14"
-                            Click="Open_wAppointmentDetail_Click"
                             Cursor="Hand">
                             <StackPanel
                                 Orientation="Horizontal">
@@ -259,65 +257,111 @@
                 </Grid>
             </Border>
 
-            <!--Search Box-->
+            <!--Top Box-->
             <Grid
                 Grid.Column="1"
                 Background="#F6F7FA">
-                <Grid
-                    Background="white"
-                    Width="300"
-                    Height="35"
-                    HorizontalAlignment="Left"
-                    Margin="50,0,0,0">
-                    <Image
-                        Width="15"
-                        Margin="20,0,0,0"
-                        HorizontalAlignment="Left">
-                        <Image.Source>
-                            <BitmapImage
-                                DecodePixelWidth="20"
-                                UriSource="/Image/search.png" />
-                        </Image.Source>
-                    </Image>
-                    <TextBlock
-                        Text="Search"
-                        FontSize="13"
-                        Padding="30,10,200,10"
-                        FontWeight="SemiBold"
-                        Foreground="LightGray"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Center"
-                        Margin="35,0,0,0"
-                        Panel.ZIndex="-1"
-                        x:Name="tbPlaceholder">
-                        <TextBlock.Resources>
-                            <Style
-                                TargetType="{x:Type Border}">
-                                <Setter
-                                    Property="CornerRadius"
-                                    Value="6" />
-                            </Style>
-                        </TextBlock.Resources>
-                    </TextBlock>
-                    <TextBox
-                        x:Name="Search"
-                        Text="{Binding AppointmentId, Mode=TwoWay}"
-                        Margin="50,0,0,0"
-                        Width="300"
-                        Height="20"
-                        FontSize="13"
-                        BorderThickness="0"
-                        HorizontalAlignment="Left"
-                        Background="Transparent"
-                        TextChanged="txtInput_TextChanged"
-                        Panel.ZIndex="1">
-
-                    </TextBox>
-                </Grid>
             </Grid>
             
-            
+            <!--Search Box-->
+            <Grid
+                HorizontalAlignment="Left"
+                Margin="0,0,0,0"
+                Grid.Column="1"> 
+                <Image
+                    Width="18"
+                    Margin="60,0,0,0"
+                    HorizontalAlignment="Left"
+                    Panel.ZIndex="2">
+                    <Image.Source>
+                        <BitmapImage
+                            DecodePixelWidth="20"
+                            UriSource="/Image/search.png" />
+                    </Image.Source>
+                </Image>
+                
+                <Border
+                    BorderThickness="1"
+                    BorderBrush="#D9D9D9"
+                    Background="White"
+                    CornerRadius="10"
+                    Padding="35,10,10,10"
+                    Margin="50,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+                    <TextBox
+                        x:Name="Search"
+                        Width="400"
+                        Height="20"
+                        FontSize="14"
+                        BorderThickness="0"
+                        Background="Transparent"
+                        TextChanged="txtInput_TextChanged" />
+                    
+                </Border>
+                <!--<TextBlock 
+                    Text="Search..."
+                    FontSize="14"
+                    FontWeight="SemiBold"
+                    Foreground="#8F8F8F"
+                    VerticalAlignment="Center"
+                    Margin="100,0,0,0"
+                    Panel.ZIndex="1"
+                    x:Name="tbPlaceholder"/>-->
+            </Grid>
 
+            <!--Profile-->
+            <StackPanel
+                Orientation="Horizontal"
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                Margin="0,0,30,0">
+                <Button
+                    BorderThickness="0"
+                    Background="Transparent"
+                    Padding="0,0,10,0"
+                    Height="35"
+                    Grid.Column="1"
+                    Cursor="Hand">
+                    <Button.Resources>
+                        <Style
+                            TargetType="{x:Type Border}">
+                            <Setter
+                                Property="CornerRadius"
+                                Value="20" />
+                        </Style>
+                    </Button.Resources>
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <Image
+                            Width="35"
+                            HorizontalAlignment="Right">
+                            <Image.Source>
+                                <BitmapImage
+                                    DecodePixelWidth="90"
+                                    UriSource="/Image/account.png" />
+                            </Image.Source>
+                        </Image>
+                        <TextBlock
+                            Text="Tom Cruse"
+                            FontSize="15"
+                            FontWeight="SemiBold"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0" />
+                        <Image
+                            Width="12"
+                            VerticalAlignment="Center"
+                            Margin="8,0,0,0">
+                            <Image.Source>
+                                <BitmapImage
+                                    DecodePixelWidth="90"
+                                    UriSource="/Image/down-arrow.png" />
+                            </Image.Source>
+                        </Image>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            
             <Grid
                 Grid.Row="1"
                 Grid.Column="1"

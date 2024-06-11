@@ -31,16 +31,16 @@ namespace Clinic.WpfApp
             p.Show();
         }
 
-        private void txtInput_TextChanged(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(Search.Text))
-            {
-                tbPlaceholder.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                tbPlaceholder.Visibility = Visibility.Hidden;
-            }
-        }
+        //private void txtInput_TextChanged(object sender, EventArgs e)
+        //{
+        //    if (string.IsNullOrEmpty(Search.Text))
+        //    {
+        //        tbPlaceholder.Visibility = Visibility.Visible;
+        //    }
+        //    else
+        //    {
+        //        tbPlaceholder.Visibility = Visibility.Hidden;
+        //    }
+        //}
     }
 }

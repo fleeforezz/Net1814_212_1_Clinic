@@ -23,6 +23,7 @@
     <None Remove="Image\down-1.png" />
     <None Remove="Image\down-arrow.png" />
     <None Remove="Image\file-circle-info.png" />
+    <None Remove="Image\forest.png" />
     <None Remove="Image\goal-net.png" />
     <None Remove="Image\home.png" />
     <None Remove="Image\hospitals.png" />
@@ -53,6 +54,7 @@
     <Resource Include="Image\down-1.png" />
     <Resource Include="Image\down-arrow.png" />
     <Resource Include="Image\file-circle-info.png" />
+    <Resource Include="Image\forest.png" />
     <Resource Include="Image\goal-net.png" />
     <Resource Include="Image\home.png" />
     <Resource Include="Image\hospitals.png" />

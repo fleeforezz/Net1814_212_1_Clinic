@@ -1,0 +1,14 @@
+[
+  {
+    "AppointmentDetailId": 0,
+    "AppointmentId": 0,
+    "ServiceId": 0,
+    "IsPeriodic": false,
+    "Day": null,
+    "Month": null,
+    "Year": null,
+    "Appointment": null,
+    "RecordDetails": [],
+    "Service": null
+  }
+]

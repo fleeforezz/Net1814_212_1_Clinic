@@ -2,8 +2,10 @@
 using Clinic.Data.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,6 +15,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace Clinic.WpfApp.UI
 {
@@ -22,6 +26,9 @@ namespace Clinic.WpfApp.UI
     public partial class wAppointmentDetail : Window
     {
         private readonly IAppointmentDetailBusiness _appointmentDetailBusiness;
+        private List<AppointmentDetail> _appointmentDetailList;
+        private const string XMLfilepath = "ProductXML.xml";
+        private const string JSONfilepath = "ProductJSON.json";
         public wAppointmentDetail()
         {
             InitializeComponent();
@@ -29,6 +36,7 @@ namespace Clinic.WpfApp.UI
             GetAllData();
         }
 
+        //######################### Save Button #########################\\
         private async void ButtonSave_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -52,7 +60,7 @@ namespace Clinic.WpfApp.UI
                     var result = await _appointmentDetailBusiness.Save(AppointmentDetail);
                     MessageBox.Show(result.Message, "Save");
 
-                } 
+                }
                 else
                 {
                     var appointmentDetail = item.Data as AppointmentDetail;
@@ -85,6 +93,7 @@ namespace Clinic.WpfApp.UI
             }
         }
 
+        //######################### Delete Button #########################\\
         private async void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
             AppointmentDetail appointmentDetail = AppointmentDetailList.SelectedItem as AppointmentDetail;
@@ -99,6 +108,7 @@ namespace Clinic.WpfApp.UI
             GetAllData();
         }
 
+        //######################### Cancel Button #########################\\
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
             AppointmentDetailId.Text = string.Empty;
@@ -110,6 +120,7 @@ namespace Clinic.WpfApp.UI
             Year.Text = string.Empty;
         }
 
+        //######################### Select Button #########################\\
         private void ButtonSelect_Click(object sender, RoutedEventArgs e)
         {
             AppointmentDetail appointmentDetail = AppointmentDetailList.SelectedItem as AppointmentDetail;
@@ -122,6 +133,7 @@ namespace Clinic.WpfApp.UI
             Year.Text = appointmentDetail.Year.ToString();
         }
 
+        //######################### Update Button #########################\\
         private async void ButtonUpdate_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -185,6 +197,95 @@ namespace Clinic.WpfApp.UI
             }
         }
 
+        //######################### SaveJSON Button #########################\\
+        private void btnSaveJSON_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (_appointmentDetailList.Count > 0)
+                {
+                    var jsonData = JsonSerializer.Serialize(_appointmentDetailList, new JsonSerializerOptions { WriteIndented = true });
+
+                    File.WriteAllText(JSONfilepath, jsonData);
+                    MessageBox.Show("Products saved to JSON file successfully!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error saving JSON file: {ex.Message}");
+            }
+        }
+
+        //######################### LoadJSON Button #########################\\
+        private void btnLoadJSON_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (File.Exists(JSONfilepath))
+                {
+                    string jsonData = File.ReadAllText(JSONfilepath);
+                    _appointmentDetailList = JsonSerializer.Deserialize<List<AppointmentDetail>>(jsonData);
+                    AppointmentDetailList.ItemsSource = _appointmentDetailList;
+                    AppointmentDetailList.Items.Refresh();
+                    MessageBox.Show("Products loaded from JSON file successfully!");
+                }
+                else
+                {
+                    MessageBox.Show("JSON File Not Found!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading JSON file: {ex.Message}");
+            }
+        }
+
+        //######################### SaveXML Button #########################\\
+        private void btnSaveXML_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (_appointmentDetailList.Count > 0)
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(List<AppointmentDetail>));
+                    using FileStream f = File.Create(XMLfilepath);
+                    serializer.Serialize(f, _appointmentDetailList);
+                    MessageBox.Show("Products saved to XML file successfully!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error saving XML file: {ex.Message}");
+            }
+        }
+
+        //######################### LoadXML Button #########################\\
+        private void btnLoadXML_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (File.Exists(XMLfilepath))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(List<AppointmentDetail>));
+                    using FileStream xmlLoad = File.Open(XMLfilepath, FileMode.Open);
+                    var loadedProducts = (List<AppointmentDetail>)serializer.Deserialize(xmlLoad);
+                    _appointmentDetailList = loadedProducts;
+                    AppointmentDetailList.ItemsSource = _appointmentDetailList;
+                    AppointmentDetailList.Items.Refresh();
+                    MessageBox.Show("Products loaded from XML file successfully!");
+                }
+                else
+                {
+                    MessageBox.Show("XML File Not Found!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading XML file: {ex.Message}");
+            }
+        }
+
+        //######################### Get All Data #########################\\
         private async void GetAllData()
         {
             var result = await _appointmentDetailBusiness.GetAll();

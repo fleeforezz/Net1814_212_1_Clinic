@@ -399,11 +399,11 @@
                 <StackPanel
                     Orientation="Vertical"
                     Margin="0,0,50,0">
-                    <Label
+                    <!--<Label
                         Margin="0,0,0,20"
                         FontSize="30"
                         FontWeight="SemiBold"
-                        Content="Appointment Detail" />
+                        Content="Appointment Detail" />-->
                     <Grid
                         HorizontalAlignment="Left"
                         Grid.Column="0"
@@ -417,6 +417,16 @@
                                 Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
+                            <RowDefinition
+                                Height="Auto" />
+                            <RowDefinition
+                                Height="Auto" />
+                            <RowDefinition
+                                Height="Auto" />
+                            <RowDefinition
+                                Height="Auto" />
+                            <RowDefinition
+                                Height="Auto" />
                             <RowDefinition
                                 Height="Auto" />
                             <RowDefinition
@@ -747,6 +757,118 @@
 
                         </Button>
 
+                        <!--Button SaveJson-->
+                        <Button
+                            x:Name="mySaveJson"
+                            Content="SaveJSON"
+                            FontSize="13"
+                            FontWeight="SemiBold"
+                            Foreground="#00A3FF"
+                            Background="#eaf4fe"
+                            BorderThickness="0"
+                            Padding="65,10,65,10"
+                            Margin="0,15,0,0"
+                            Grid.Row="9"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Cursor="Hand"
+                            Click="btnSaveJSON_Click">
+
+                            <Button.Resources>
+                                <Style
+                                    TargetType="{x:Type Border}">
+                                    <Setter
+                                        Property="CornerRadius"
+                                        Value="6" />
+                                </Style>
+                            </Button.Resources>
+
+                        </Button>
+
+                        <!--Button LoadJson-->
+                        <Button
+                            x:Name="myLoadJson"
+                            Content="LoadJSON"
+                            FontSize="13"
+                            FontWeight="SemiBold"
+                            Foreground="#00A3FF"
+                            Background="#eaf4fe"
+                            BorderThickness="0"
+                            Padding="65,10,65,10"
+                            Margin="0,15,0,0"
+                            Grid.Row="10"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Cursor="Hand"
+                            Click="btnLoadJSON_Click">
+
+                            <Button.Resources>
+                                <Style
+                                    TargetType="{x:Type Border}">
+                                    <Setter
+                                        Property="CornerRadius"
+                                        Value="6" />
+                                </Style>
+                            </Button.Resources>
+
+                        </Button>
+
+                        <!--Button SaveXML-->
+                        <Button
+                            x:Name="mySaveXML"
+                            Content="SaveXML"
+                            FontSize="13"
+                            FontWeight="SemiBold"
+                            Foreground="#00A3FF"
+                            Background="#eaf4fe"
+                            BorderThickness="0"
+                            Padding="65,10,65,10"
+                            Margin="0,15,0,0"
+                            Grid.Row="11"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Cursor="Hand"
+                            Click="btnSaveXML_Click">
+
+                            <Button.Resources>
+                                <Style
+                                    TargetType="{x:Type Border}">
+                                    <Setter
+                                        Property="CornerRadius"
+                                        Value="6" />
+                                </Style>
+                            </Button.Resources>
+
+                        </Button>
+
+                        <!--Button LoadXML-->
+                        <Button
+                            x:Name="myLoadXML"
+                            Content="LoadXML"
+                            FontSize="13"
+                            FontWeight="SemiBold"
+                            Foreground="#00A3FF"
+                            Background="#eaf4fe"
+                            BorderThickness="0"
+                            Padding="65,10,65,10"
+                            Margin="0,15,0,0"
+                            Grid.Row="12"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Cursor="Hand"
+                            Click="btnLoadXML_Click">
+
+                            <Button.Resources>
+                                <Style
+                                    TargetType="{x:Type Border}">
+                                    <Setter
+                                        Property="CornerRadius"
+                                        Value="6" />
+                                </Style>
+                            </Button.Resources>
+
+                        </Button>
+
                         <!--Button Cancel-->
                         <Button
                             x:Name="myButtonCancel"
@@ -759,7 +881,7 @@
                             BorderBrush="#F6F7FA"
                             Padding="65,10,65,10"
                             Margin="0,15,0,0"
-                            Grid.Row="9"
+                            Grid.Row="15"
                             Grid.Column="1"
                             Grid.ColumnSpan="2"
                             Cursor="Hand"
